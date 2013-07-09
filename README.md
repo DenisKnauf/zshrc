@@ -1,7 +1,7 @@
-author
-:: Sebastian Tramp <mail@sebastian.tramp.name>
-license
-:: http://opensource.org/licenses/gpl-license.php
+Author
+: Sebastian Tramp <mail@sebastian.tramp.name>
+License
+: http://opensource.org/licenses/gpl-license.php
 
 Due to many requests I share my zsh configuration compilation.
 Copy the repository to ~/.zsh and run 'make install' once
@@ -10,15 +10,23 @@ Copy the repository to ~/.zsh and run 'make install' once
 File description
 ================
 
-	$ZSH_CONFIG/README      - This file
-	$ZSH_CONFIG/Makefile    - make-config to run with 'make install'
-	$ZSH_CONFIG/aliases     - alias definitions which can be edited/modified with 'aedit'
-	$ZSH_CONFIG/completion  - tab completion configuration
-	$ZSH_CONFIG/functions   - functions and key bindings to that functions
-	$ZSH_CONFIG/options     - shell options as history size, general keyindings, etc
-	$ZSH_CONFIG/prompt      - the prompt definition
-	$ZSH_CONFIG/zshrc       - the main RC file (will be linked to ~/.zshrc)
+`$ZSH_CONFIG/README`
+: This file
+`$ZSH_CONFIG/Makefile`
+: make-config to run with 'make install'
+`$ZSH_CONFIG/aliases`
+: alias definitions which can be edited/modified with 'aedit'
+`$ZSH_CONFIG/completion`
+: tab completion configuration
+`$ZSH_CONFIG/functions`
+: functions and key bindings to that functions
+`$ZSH_CONFIG/options`
+: shell options as history size, general keyindings, etc
+`$ZSH_CONFIG/prompt`
+: the prompt definition
+`$ZSH_CONFIG/zshrc`
+: the main RC file (will be linked to ~/.zshrc)
 
 These files are not in the repository but will be created
 
-	$ZSH_CACHE/history     - the history file (shared for all zsh instances)
+	`$ZSH_CACHE/history     - the history file (shared for all zsh instances)
