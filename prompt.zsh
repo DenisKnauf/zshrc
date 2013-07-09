@@ -70,14 +70,15 @@ function promptSetup () {
         # we are on our home desktop
     else
         # we are outside on a server
-        PR_SIGN+="`hostname` "
+        PR_SIGN+="%F{green}$LOGNAME@`hostname`%F{white} "
     fi
+
+    # full path
+    PR_SIGN+="%F{blue}%~%F{white} "
 
     # setup the main sign
     if [[ $CURRENT_USER == 'root' ]]; then
         PR_SIGN+="☠"
-    elif [[ $CURRENT_USER == 'vagrant' ]]; then
-        PR_SIGN+="𝓥"
     else
         PR_SIGN+="∴"
     fi
@@ -94,7 +95,7 @@ function promptSetup () {
     PS1+="%{$terminfo_down_sc$VCS_LINE$terminfo[rc]%}" # the second line
     PS1+=$PR_STITLE               # tmux title if present
     PS1+=$PR_VCSSIGN              # version control part if present
-    PS1+=%(?..'%F{136}%B%'?)       # output last error number if present
+    PS1+=%(?..'%F{136}%B%'?)      # output last error number if present
     PS1+=$PR_SIGN                 # the user sign
     PS1+=" "                      # an additional space
 
