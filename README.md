@@ -34,5 +34,6 @@ File description
 These files are not in the repository but will be created
 
 <dl>
-	`$ZSH_CACHE/history     - the history file (shared for all zsh instances)
+<dt>`$ZSH_CACHE/history`</dt>
+<dd>the history file (shared for all zsh instances)</dd>
 </dl>
